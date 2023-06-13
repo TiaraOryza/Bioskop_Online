@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <center><h2>~ LOGIN MEMBER ~</h2></center>
+    <br>
+    <p align="center" ><font color="white">UNTUK MELAKUKAN BOOKING, ANDA HARUS LOGIN TERLEBIH DAHULU !</font></p>
+    <div class="login">
+    <br>
+        <form action="login.php" method="post" onSubmit="return validasi()">
+            <div>
+                <label><font color="blue"><b>Username : </b></font></label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label><font color="blue"><b>Password : </b></font></label>
+                <input type="text" name="password" id="password">
+            </div>
+            <div>
+                <input type="submit" value="Login" class="button">
+            </div>
+        </form>
+    </div>
+    <p align="center"><font color="white">Belum Menjadi Member?</font>
+    <a href="Daftar.html"><font color="#f0f">sign up</font></a></p>
+</body>
+
+<script type="text/javascript">
+    function validasi(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username != "" && password !=""){
+            return true;
+        } else{
+            alert('Username dan Password harus diisi!!');
+            return false;
+        }
+    }
+</script>
+</html>

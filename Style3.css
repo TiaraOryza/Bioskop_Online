@@ -1,0 +1,38 @@
+#kotak8,
+#flip8 {
+    padding: 0px;
+    text-align: center;
+    background-color: #a7dbd8;
+    border: solid 2px #e0e4cc;
+    border-radius: 5px;
+}
+
+#kotak8 {
+    padding: 0px;
+}
+
+#kotak9,
+#flip9 {
+    padding: 5px;
+    text-align: center;
+    background-color: #a7dbd8;
+    border: solid 2px #e0e4cc;
+    border-radius: 5px;
+}
+
+#kotak9 {
+    padding: 50px;
+}
+
+#kotak10,
+#flip10 {
+    padding: 5px;
+    text-align: center;
+    background-color: #a7dbd8;
+    border: solid 2px #e0e4cc;
+    border-radius: 5px;
+}
+
+#kotak10 {
+    padding: 50px;
+}

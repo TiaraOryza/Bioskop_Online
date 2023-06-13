@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOKING TIKET</title>
+        <link rel="stylesheet" type="text/css" href="style4.css"> 
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(function(){
+                $("#jQuery_accordion").accordion();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="top-banner">
+        <div class="banner-wrapper">
+                <a href="https://www.cgv.id/en/movies/info/21009100/" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'F9 Top']);" target="_blank">
+                <img src="https://cdn.cgv.id/uploads/marketing/2106/BN202106152119296365.jpg" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'F9 Top']);">
+            </a>
+        </div>
+            </div>
+
+        <a href="halaman1.html"><font color="black">kembali</font></a>
+        <center><table>
+            <br>
+        <center><h2>~ BOOKING TIKET ~</h2></center>
+        <br>
+            <form action="BookingProses.php">  
+            <tr>
+                <td><label><font color="maroon"><b>Username  </b></font></label></td>
+                <td><input type="text/number" name="username"></td>                
+            </tr>  
+            <tr>
+                <td><label><font color="maroon"><b>Nama Film  </b></font></label></td>
+                <td><input type="text/number" name="film"></td>                
+            </tr>          
+            <tr>
+                <td><label><font color="maroon"><b>Ruangan  </b></font></label></td>
+                <td><input type="text/number" name="ruangan"></td>
+            </tr>
+            <tr>
+                <td><label><font color="maroon"><b>Bangku  </b></font></label></td>
+                <td><input type="text/number" name="bangku"></td>
+            </tr>
+            <tr>
+                <td><label><font color="maroon"><b>Jam Tayang  </b></font></label></td>
+                <td><select name="tayang" size="1">
+                    <option value="08.00-10.00">08.00-10.00
+                    <option value="10.00-12.00">10.00-12.00
+                    <option value="12.00-14.00">12.00-14.00
+                    <option value="14.00-16.00">14.00-16.00
+                    <option value="16.00-18.00">16.00-18.00
+                    <option value="18.00-20.00">18.00-20.00
+                    <option value="20.00-22.00">20.00-22.00
+                    </option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label><font color="maroon"><b>Tanggal Booking  </b></font></label></td>
+                <td><input type="text/number" name="tanggal"></td>
+            </tr>
+            <tr>
+                <td><label><font color="maroon"><b>Metode Bayar  </b></font></label></td>
+                <td><select name="bayar" size="1">
+                    <option value="Cash">Cash
+                    <option value="Ovo">OVO
+                    <option value="Transfer">Transfer Bank</option>
+                </select></td>
+            </tr>
+            <tr>                
+                <tr><td><input type="submit" name="submit" value="booking"></td></tr>
+            </tr>
+        </form>
+        </table></center>        
+    </body>
+</html>

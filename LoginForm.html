@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style5.css"/>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <center><h2>~ LOGIN ADMIN ~</h2></center>
+    <br>
+    <div class="loginadmin">
+    <br>
+        <form action="login2.php" method="post" onSubmit="return validasi()">
+            <div>
+                <label><font color="blue"><b>ID admin : </b></font></label>
+                <input type="text" name="id_admin" id="id_admin">
+            </div>
+            <div>
+                <label><font color="blue"><b>Password : </b></font></label>
+                <input type="text" name="password" id="password">
+            </div>
+            <div>
+                <input type="submit" value="Login" class="button">
+            </div>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function validasi(){
+        var username = document.getElementById("id_admin").value;
+        var password = document.getElementById("password").value;
+        if (username != "" && password !=""){
+            return true;
+        } else{
+            alert('ID dan Password harus diisi!!');
+            return false;
+        }
+    }
+</script>
+</html>
